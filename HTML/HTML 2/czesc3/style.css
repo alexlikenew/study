@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section-title {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px black;
+}
+.hero-text span {
+	text-transform: uppercase;
+	color: aqua;
+}
+section {
+	scroll-margin-top: 60px;
+}
+
+/* NAV */
+nav {
+	position: sticky;
+	z-index: 10;
+	height: 60px;
+	line-height: 60px;
+	background-color: #bdafaf;
+	text-align: center;
+}
+
+.burger-icon {
+	margin-left: auto;
+	display: block;
+	padding: 0 30px;
+	background: none;
+	border: none;
+	line-height: 60px;
+	cursor: pointer;
+}
+.nav-items {
+	display: none;
+}
+/* HEADER */
+.header {
+	position: relative;
+	background-image: url('/czesc3/mug-3059994_640.jpg');
+	height: 330px;
+	background-size: cover;
+	background-position: center;
+}
+
+/* MAIN */
+main {
+	margin: 80px 0;
+}
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+/* PRODUCTS */
+.products {
+	margin: 60px auto;
+}
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.product:hover h3 {
+	transform: scale(1.5);
+}
+.first-product {
+	background-image: url('./img/child-3837317_640.jpg');
+}
+
+.second-product {
+	background-image: url('./img/laptop-5078698_640.jpg');
+}
+.third-product {
+	background-image: url('./img/notepad-1130743_640.jpg');
+}
+.fourth-product {
+	background-image: url('./img/coffee-4334647_640.jpg');
+}
+.product h3 {
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+/* PRODUCTS */
+
+/* KONTAKT */
+.contact {
+	text-align: center;
+}
+.contact h3 {
+	text-transform: uppercase;
+	margin: 20px 0 5px;
+}
+/* KONTAKT */
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+	padding: 30px 10px;
+	background-color: #ddd;
+}
+
+/* FOOTER */
+
+/* MEDIA */
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: black;
+		transition: color 0.4s;
+	}
+	.nav-items a:hover {
+		color: blue;
+	}
+	.header {
+		background-image: url(/czesc3/img/mug-3059994_1920.jpg);
+		height: 400px;
+	}
+	.hero-text h1 {
+		font-size: 36px;
+	}
+	.hero-text p {
+		font-size: 22px;
+	}
+	.product h3 {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 992px) {
+	.product-box {
+		font-size: 0;
+	}
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 46px;
+	}
+	.hero-text p {
+		font-size: 26px;
+	}
+}

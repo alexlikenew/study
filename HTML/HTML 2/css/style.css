@@ -1,0 +1,11 @@
+body {
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  background-color: aqua;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
