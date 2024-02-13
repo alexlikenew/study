@@ -1,3 +1,5 @@
+@use './colors';
+
 *,
 *::after,
 *::before {
@@ -9,6 +11,8 @@
 html,
 body {
 	height: 100%;
+
+	display: flex;
 }
 
 html {
@@ -32,7 +36,6 @@ select {
 }
 
 button {
-	border: none;
 	cursor: pointer;
 }
 
@@ -43,4 +46,42 @@ textarea {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.burger__btn {
+	display: none;
+	position: absolute;
+	padding: 30px 30px;
+	background: none;
+	border: none;
+	font-size: 5em;
+	right: 0;
+	top: 0;
+	transition: color 0.5s;
+
+	&:hover {
+		color: colors.$main-color;
+	}
+}
+.nav {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	.main__title {
+		font-size: 6rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 6rem;
+	}
+	.nav__items {
+		position: absolute;
+	}
+	.nav__items a {
+		font-size: 3.6rem;
+		color: colors.$black-color;
+		padding: 6rem;
+	}
 }
