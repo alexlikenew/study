@@ -9,40 +9,27 @@
 html,
 body {
   height: 100%;
-  display: flex;
-}
-
-html {
+  width: 100%;
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
 
-a {
-  text-decoration: none;
+.heading-text {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  font-size: 2.4rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-img {
-  height: auto;
-}
-
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-textarea {
-  resize: vertical;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.box-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+  position: absolute;
 }
 
 .burger__btn {
@@ -61,24 +48,144 @@ table {
 }
 
 .nav {
-  width: 100%;
-  height: auto;
+  position: relative;
   display: flex;
   justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 6.4rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  font-size: 2.4rem;
+  position: relative;
+  height: auto;
+}
+
+.nav__heading-text {
+  position: absolute;
+  left: 0;
+  padding-top: 14px;
+}
+.nav__heading-text i {
+  margin-right: 10px;
+  color: rgb(70, 62, 62);
+}
+
+.nav__items {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.nav__items a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+.nav__items a:hover {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/jungle-1807476_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
   position: relative;
 }
-.nav .main__title {
-  font-size: 6rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 6rem;
+.header__box {
+  color: white;
+  z-index: 1;
 }
-.nav .nav__items {
-  position: absolute;
+.header__box p {
+  font-size: 2rem;
 }
-.nav .nav__items a {
-  font-size: 3.6rem;
-  color: black;
-  padding: 6rem;
+.header__box h1 {
+  font-size: 3rem;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.about-us__card {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+}
+.about-us__card__image-box {
+  width: 45%;
+  overflow: hidden;
+  margin-right: 5%;
+}
+.about-us__card__image-box img {
+  width: 100%;
+}
+.about-us__card__info {
+  width: 40%;
+}
+.about-us__card__info h3 {
+  margin-bottom: 20px;
+}
+.about-us__card__info p {
+  font-size: 1.2rem;
+  line-height: 200%;
+}
+
+.adventure {
+  position: relative;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/girl-5785590_1920.jpg");
+}
+.adventure .adventure__text-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adventure .adventure__text-info a {
+  color: white;
+  align-items: center;
+  border: 1px solid white;
+  padding: 2rem 12rem;
+  cursor: pointer;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.offer__text-info {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.offer__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
