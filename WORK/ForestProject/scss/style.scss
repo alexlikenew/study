@@ -21,7 +21,7 @@ body {
 .heading-text {
 	margin-top: 2.5em;
 	margin-bottom: 0.5em;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
 	font-weight: 300;
 	width: 100%;
 	text-align: center;
@@ -185,15 +185,69 @@ body {
 	&__text-info {
 		width: 100%;
 		text-align: center;
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 		margin-top: 2rem;
 	}
 	&__cards {
 		width: 100%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
+		margin-top: 2em;
 	}
 	&__card {
+		padding:1.8em 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
+		border-radius: 8px;
+		ul {
+			list-style: none;
+		}
+		&--price {
+			font-size: 4rem;
+			font-weight: 700;
+			margin-top: 1rem;
+			span {
+				font-size: 5rem;
+			}
+		}
+		&--options {
+			margin-top: 1.4rem;
+			li {
+				padding: 0.4rem;
+				font-size: 1.8rem;
+				.fa-check {
+					color: green;
+					margin-right: 6px;
+				}
+				.fa-minus {
+					color: gray;
+					margin-right: 6px;
+				}
+			}
+			.offer-__card_not--included {
+				color: gray;
+			}
+		}
+		&--btn {
+			margin-top: 2rem;
+			padding: 12px 70px;
+			border-radius: 8px;
+			border: none;
+			box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.274);
+			font-size: 1.8rem;
+			cursor: pointer;
+			background: none;
+			&:hover {
+				background-color: rgb(64, 255, 47);
+				box-shadow: -1px 14px 14px 0px rgba(133, 206, 96, 1);
+			}
+		}
 	}
+}
+footer{
+	font-size: 2rem;
 }
