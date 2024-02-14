@@ -97,7 +97,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/jungle-1807476_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,6 +113,18 @@ body {
 }
 .header__box h1 {
   font-size: 3rem;
+}
+
+.main-header {
+  background-image: url("../img/jungle-1807476_1920.jpg");
+}
+
+.offers-header {
+  background-image: url("../img/california-4053982_1920.jpg");
+}
+
+.contact-header {
+  background-image: url("../img/contact-us-2993000_1920.jpg");
 }
 
 .about-us {
@@ -202,9 +213,10 @@ body {
   justify-content: center;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
   border-radius: 8px;
+  transition: 0.3s;
 }
 .offer__card:hover {
-  box-shadow: 0 0 8px px rgba(0, 0, 0, 0.082);
+  box-shadow: 0 0 8px px rgba(0, 0, 0, 0.82);
 }
 .offer__card ul {
   list-style: none;
