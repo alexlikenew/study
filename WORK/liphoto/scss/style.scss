@@ -44,3 +44,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+	font-size: 2.4rem;
+}
+.font-advent-pro {
+	font-family: "Advent Pro", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+  }
+header {
+	.logo {
+	
+	}
+}
