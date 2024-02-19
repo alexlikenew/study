@@ -132,6 +132,13 @@ body {
   font-size: 4.2rem;
   font-weight: 400;
 }
+.nav__heading-text h2 a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: black;
+}
 .nav__heading-text i {
   margin-left: 10px;
   margin-right: 10px;
@@ -228,7 +235,7 @@ body {
   display: flex;
   justify-content: center;
   height: 40vh;
-  background-image: url("/img/girl-5785590_1920.jpg");
+  background-image: url("../img/girl-5785590_1920.jpg");
   background-position: center;
   background-size: cover;
   align-items: center;
