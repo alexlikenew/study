@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Forest </title>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/56455ad052.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,19 +20,25 @@
     <nav class="nav">
         <div class="wrapper">
             <div class="nav__heading-text">
-                <h3 class="main__title"><i class="fa-solid fa-tree"></i>Forest</h3>
-
+                <h2 class="main__title"><i class="fa-solid fa-tree"></i>Forest</h2>
             </div>
             <div class="nav__items">
-                <a href="">Home</a>
-                <a href="">O nas</a>
-                <a href="">Oferta</a>
-                <a href="">Kontakt</a>
+                <a href="index.html">Home</a>
+                <a href="index.html">O nas</a>
+                <a href="offers.html">Oferta</a>
+                <a href="contact.html">Kontakt</a>
             </div>
         </div>
     </nav>
+    <div class="nav__mobile-nav non-active-mobile-menu">
+        <div class="nav__items--mobile">
+            <a href="index.html">Home</a>
+            <a href="index.html">O nas</a>
+            <a href="offers.html">Oferta</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+    </div>
     <!-- NAV -->
-    <!-- HEADER -->
     <header class="header contact-header">
         <div class="header__box-shadow box-shadow"></div>
         <div class="wrapper">
@@ -42,28 +48,34 @@
             </div>
         </div>
     </header>
-    <!-- HEADER -->
     <main class="main">
-
-
-
-
-        <!-- SECTION OFFERS -->
         <section class="offer">
             <div class="wrapper">
                 <p class=" heading-text">kontakt</p>
                 <p class="offer__text-info">Skontaktuj się z nami żeby poznać wszystkie szczegoły!</p>
-
+                <div class="contact-form">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6088.277968126195!2d19.889943936394186!3d50.089927218195065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1708350015308!5m2!1spl!2spl"
+                        width="600" height="450" style="border-radius: 8px; border:0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <form action="">
+                        <label for="name">Imie i nazwisko: </label>
+                        <input type="text" id="name" placeholder="Imie i nazwisko">
+                        <label for="email">Adres mailowy: </label>
+                        <input type="text" id="email" placeholder="Adres mailowy">
+                        <label for="message">Wiadomość:</label>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Twoja wiadomosc"></textarea>
+                        <button type="button">Wyslij</button>
+                    </form>
+                </div>
             </div>
         </section>
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="wrapper">
-
-
                 <div class="footer__logo">
                     <h3 class="footer__logo__title"><i class="fa-solid fa-tree"></i><a href="#">Forest</a> </h3>
                 </div>
-
                 <div class="footer__info">
                     <div class="footer__info--column">
                         <p class="footer__info--column--heading">O nas</p>
@@ -79,22 +91,17 @@
                     <div class="footer__info--column">
                         <p class="footer__info--column--heading">Dokumenty</p><a href="">Wnioski</a>
                         <a href="">Rezerwacje</a>
-
                     </div>
                 </div>
                 <hr>
-
             </div>
-
             <p class="footer__bottom-text">&COPY;
                 <script>document.write(/\d{4}/.exec(Date())[0])</script> <span class="footer__year"></span> Forest Group
                 Company Ltd.
             </p>
         </footer>
-
-
+        <!-- FOOTER -->
     </main>
-
     <script src="./js/script.js"></script>
 </body>
 

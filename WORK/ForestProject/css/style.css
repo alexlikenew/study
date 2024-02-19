@@ -13,6 +13,7 @@ body {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -22,32 +23,36 @@ body {
 .heading-text {
   margin-top: 2.5em;
   margin-bottom: 0.5em;
+  width: 100%;
   font-size: 4rem;
   font-weight: 300;
-  width: 100%;
   text-align: center;
   text-transform: uppercase;
 }
 
 .box-shadow {
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.527);
-  position: absolute;
+}
+
+.active {
+  font-weight: 700;
 }
 
 .burger__btn {
-  display: none;
   position: absolute;
+  display: none;
   right: 0;
   top: 0;
   padding: 30px 30px;
   background: none;
   border: none;
-  font-size: 5em;
-  transition: color 0.5s;
   color: white;
+  font-size: 5em;
   z-index: 3000;
+  transition: color 0.5s;
   cursor: pointer;
 }
 .burger__btn:hover {
@@ -60,8 +65,8 @@ body {
   justify-content: center;
   align-content: center;
   width: 100%;
-  background-color: rgb(255, 255, 255);
   height: 10rem;
+  background-color: rgb(255, 255, 255);
   z-index: 1000;
 }
 .nav .wrapper {
@@ -88,8 +93,8 @@ body {
   font-size: 20px;
 }
 .nav__mobile-nav .nav__items--mobile a {
-  text-decoration: none;
   padding: 40px 30px 40px 30px;
+  text-decoration: none;
   color: black;
   border-bottom: 1px solid black;
 }
@@ -111,11 +116,11 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
+  height: auto;
   max-width: 1200px;
   font-size: 2.4rem;
-  position: relative;
-  height: auto;
 }
 
 .nav__heading-text {
@@ -124,13 +129,13 @@ body {
 }
 .nav__heading-text h2 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 4.2rem;
+  font-weight: 400;
 }
 .nav__heading-text i {
+  margin-left: 10px;
   margin-right: 10px;
   color: rgb(70, 62, 62);
-  margin-left: 10px;
 }
 
 .nav__items {
@@ -149,19 +154,19 @@ body {
 }
 
 .header {
-  width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 48vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 48vh;
-  position: relative;
 }
 .header__box {
-  color: white;
   z-index: 1;
+  color: white;
   text-align: left;
 }
 .header__box p {
@@ -181,21 +186,22 @@ body {
 
 .contact-header {
   background-image: url("../img/contact-us-2993000_1920.jpg");
+  background-position: top;
 }
 
 .about-us {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative;
   margin-bottom: 4rem;
 }
 .about-us__card {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: top;
+  width: 100%;
   margin-top: 5rem;
 }
 .about-us__card__image-box {
@@ -219,13 +225,13 @@ body {
 
 .adventure {
   position: relative;
-  height: 40vh;
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 40vh;
   background-image: url("/img/girl-5785590_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  align-items: center;
 }
 .adventure .adventure__text-info {
   display: flex;
@@ -233,8 +239,8 @@ body {
   justify-content: center;
 }
 .adventure .adventure__text-info a {
-  padding: 5rem 16rem;
   align-items: center;
+  padding: 5rem 16rem;
   border: 1px solid white;
   color: white;
   font-size: 5rem;
@@ -242,11 +248,11 @@ body {
 }
 
 .offer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative;
   margin-bottom: 4rem;
 }
 .offer__text-info {
@@ -256,33 +262,37 @@ body {
   margin-top: 2rem;
 }
 .offer__cards {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-top: 2em;
 }
 .offer__card {
-  padding: 2.2em 2.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2.2em 2.8em;
+  margin-bottom: 2rem;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
   border-radius: 8px;
   transition: 0.3s;
-  margin-bottom: 2rem;
 }
 .offer__card:hover {
+  transform: scale(1.05);
   box-shadow: 0 0 8px px rgba(0, 0, 0, 0.82);
+}
+.offer__card:hover .offer__card--price {
+  color: rgb(3, 250, 3);
 }
 .offer__card ul {
   list-style: none;
 }
 .offer__card--price {
+  margin-top: 1rem;
   font-size: 4rem;
   font-weight: 700;
-  margin-top: 1rem;
 }
 .offer__card--price span {
   font-size: 5rem;
@@ -322,18 +332,18 @@ body {
   transform: scale(1.1);
 }
 .offer .offer__go-for-more-button {
-  width: 100%;
-  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top: 40px;
 }
 .offer .offer__go-for-more-button a {
+  padding: 4rem;
+  border-radius: 8px;
   text-decoration: none;
   color: black;
   background-color: white;
-  padding: 4rem;
-  border-radius: 8px;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.274);
   transition: 0.3s;
 }
@@ -343,15 +353,65 @@ body {
   box-shadow: -1px 14px 14px 0px rgb(133, 206, 96);
   transform: scale(1.1);
 }
+.offer .contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+.offer .contact-form iframe {
+  width: 50%;
+}
+.offer .contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+.offer .contact-form form label {
+  padding: 10px;
+  text-align: center;
+}
+.offer .contact-form form input {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(243, 242, 242);
+  border: none;
+}
+.offer .contact-form form textarea {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+}
+.offer .contact-form form button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(130, 219, 122);
+  border: none;
+  border-radius: 4px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: gray;
+}
+.offer .contact-form form button:hover {
+  background-color: rgb(47, 182, 35);
+  color: white;
+}
 
 .footer {
-  font-size: 2rem;
-  width: 100%;
-  background-color: rgb(235, 233, 233);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: rgb(235, 233, 233);
+  font-size: 2rem;
 }
 .footer .wrapper {
   display: flex;
@@ -360,8 +420,8 @@ body {
   min-height: 34vh;
 }
 .footer__logo {
-  width: 48%;
   display: flex;
+  width: 48%;
   font-size: 5rem;
 }
 .footer__logo i {
@@ -375,10 +435,10 @@ body {
   font-size: 6rem;
 }
 .footer__info {
-  width: 48%;
   display: flex;
   justify-content: space-between;
   align-items: start;
+  width: 48%;
 }
 .footer__info--column {
   display: flex;
@@ -400,8 +460,8 @@ body {
 }
 .footer .footer__bottom-text {
   width: 100%;
-  text-align: center;
   padding: 30px 0;
+  text-align: center;
   font-size: 1.4rem;
   border-top: 1px solid gray;
 }
@@ -448,6 +508,15 @@ body {
     align-items: center;
     width: 100%;
   }
+  .offer .contact-form {
+    flex-direction: column;
+  }
+  .offer .contact-form iframe {
+    width: 100%;
+  }
+  .offer .contact-form form {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) {
   .wrapper {
@@ -492,6 +561,15 @@ body {
   .footer__logo {
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+  .offer .contact-form {
+    flex-direction: column;
+  }
+  .offer .contact-form iframe {
+    width: 100%;
+  }
+  .offer .contact-form form {
     width: 100%;
   }
 }
@@ -561,5 +639,14 @@ body {
   }
   .burger__btn {
     display: none;
+  }
+  .offer .contact-form {
+    flex-direction: row;
+  }
+  .offer .contact-form iframe {
+    width: 50%;
+  }
+  .offer .contact-form form {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

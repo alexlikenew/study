@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
 <!-- 
-
-    MEDIA QUERIES
-    BURGER BUTTON 
-    SCROLL SPY FOR HEADER
     SLOW SCROLL SPY FOR SECTION CLICK
-    ID FOR SECTIONS
-    CONTACT MENUWITH GOOGLE MAPS
-
-
-
+    CONTACT MENUWITH GOOGLE MAP
 
  -->
 
@@ -21,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <title>Forest </title>
-        <link rel="stylesheet" href="./css/style.css">
+    <title>Forest </title>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/56455ad052.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,22 +26,21 @@
         <div class="wrapper">
             <div class="nav__heading-text">
                 <h2 class="main__title"><i class="fa-solid fa-tree"></i>Forest</h2>
-
             </div>
             <div class="nav__items">
                 <a href="#">Home</a>
-                <a href="#">O nas</a>
-                <a href="#">Oferta</a>
-                <a href="#">Kontakt</a>
+                <a href="#about-us">O nas</a>
+                <a href="#adventure">Oferta</a>
+                <a href="contact.html">Kontakt</a>
             </div>
         </div>
     </nav>
     <div class="nav__mobile-nav non-active-mobile-menu">
         <div class="nav__items--mobile">
             <a href="#">Home</a>
-            <a href="#">O nas</a>
-            <a href="#">Oferta</a>
-            <a href="#">Kontakt</a>
+            <a href="#about-us">O nas</a>
+            <a href="#adventure">Oferta</a>
+            <a href="contact.html">Kontakt</a>
         </div>
     </div>
     <!-- NAV -->
@@ -63,13 +54,14 @@
             </div>
         </div>
     </header>
+    <!-- HEADER -->
     <main class="main">
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="wrapper">
                 <p class="about-us__heading-text heading-text">O nas</p>
                 <div class="about-us__card">
                     <div class="about-us__card__image-box">
-                        <img src="./img/waters-3095682_1280.jpg" alt="">
+                        <img src="./img/waters-3095682_1280.jpg" alt="lake with little insland">
                     </div>
                     <div class="about-us__card__info">
                         <h3>Niezapomniane przygody</h3>
@@ -84,9 +76,8 @@
                 </div>
             </div>
         </section>
-
         <!-- SECTION ADVENTURE -->
-        <section class="adventure">
+        <section class="adventure" id="adventure">
             <div class="box-shadow">
             </div>
             <div class="wrapper">
@@ -95,9 +86,9 @@
                 </div>
             </div>
         </section>
-
+        <!-- SECTION ADVENTURE -->
         <!-- SECTION OFFERS -->
-        <section class="offer">
+        <section class="offer" id="offer">
             <div class="wrapper">
                 <p class=" heading-text">Oferta</p>
                 <p class="offer__text-info">Wybierz jedna z naszych wspanialych ofert!</p>
@@ -154,14 +145,13 @@
                 </div>
             </div>
         </section>
+        <!-- SECTION OFFERS -->
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="wrapper">
-
-
                 <div class="footer__logo">
                     <h3 class="footer__logo__title"><i class="fa-solid fa-tree"></i><a href="#">Forest</a> </h3>
                 </div>
-
                 <div class="footer__info">
                     <div class="footer__info--column">
                         <p class="footer__info--column--heading">O nas</p>
@@ -177,22 +167,17 @@
                     <div class="footer__info--column">
                         <p class="footer__info--column--heading">Dokumenty</p><a href="">Wnioski</a>
                         <a href="">Rezerwacje</a>
-
                     </div>
                 </div>
                 <hr>
-
             </div>
-
             <p class="footer__bottom-text">&COPY;
                 <script>document.write(/\d{4}/.exec(Date())[0])</script> <span class="footer__year"></span> Forest Group
                 Company Ltd.
             </p>
         </footer>
-
-
+        <!-- FOOTER -->
     </main>
-
     <script src="./js/script.js"></script>
 </body>
 
