@@ -15,10 +15,14 @@ body {
   font-optical-sizing: auto;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .heading-text {
   margin-top: 2.5em;
   margin-bottom: 0.5em;
-  font-size: 2.8rem;
+  font-size: 4rem;
   font-weight: 300;
   width: 100%;
   text-align: center;
@@ -35,31 +39,80 @@ body {
 .burger__btn {
   display: none;
   position: absolute;
+  right: 0;
+  top: 0;
   padding: 30px 30px;
   background: none;
   border: none;
   font-size: 5em;
-  right: 0;
-  top: 0;
   transition: color 0.5s;
+  color: white;
+  z-index: 3000;
+  cursor: pointer;
 }
 .burger__btn:hover {
   color: blue;
 }
 
 .nav {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-content: center;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  height: 6.4rem;
+  height: 10rem;
+  z-index: 1000;
+}
+.nav .wrapper {
+  display: flex;
+  align-items: center;
+}
+.nav__mobile-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 2000;
+}
+.nav__mobile-nav .nav__items--mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  font-size: 20px;
+}
+.nav__mobile-nav .nav__items--mobile a {
+  text-decoration: none;
+  padding: 40px 30px 40px 30px;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.nav__mobile-nav .nav__items--mobile a:hover {
+  background-color: black;
+  color: white;
+}
+
+.active-mobile-menu {
+  display: flex;
+}
+
+.non-active-mobile-menu {
+  display: none;
+}
+
+.burger-btn-dark-mode {
+  color: black;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   font-size: 2.4rem;
   position: relative;
   height: auto;
@@ -68,7 +121,11 @@ body {
 .nav__heading-text {
   position: absolute;
   left: 0;
-  padding-top: 14px;
+}
+.nav__heading-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 4.2rem;
 }
 .nav__heading-text i {
   margin-right: 10px;
@@ -80,11 +137,10 @@ body {
   position: absolute;
   right: 0;
   font-size: 20px;
-  padding-top: 20px;
 }
 .nav__items a {
   text-decoration: none;
-  padding: 20px;
+  padding: 40px 30px 40px 30px;
   color: black;
 }
 .nav__items a:hover {
@@ -100,19 +156,19 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 48vh;
   position: relative;
 }
 .header__box {
   color: white;
   z-index: 1;
-  text-align: center;
+  text-align: left;
 }
 .header__box p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .header__box h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .main-header {
@@ -139,31 +195,31 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   margin-top: 5rem;
 }
 .about-us__card__image-box {
-  width: 45%;
+  width: 50%;
   overflow: hidden;
-  margin-right: 5%;
 }
 .about-us__card__image-box img {
   width: 100%;
 }
 .about-us__card__info {
-  width: 40%;
+  width: 50%;
+  margin-left: 5%;
 }
 .about-us__card__info h3 {
   margin-bottom: 20px;
 }
 .about-us__card__info p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 200%;
 }
 
 .adventure {
   position: relative;
-  height: 30rem;
+  height: 40vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -177,10 +233,11 @@ body {
   justify-content: center;
 }
 .adventure .adventure__text-info a {
-  color: white;
+  padding: 5rem 16rem;
   align-items: center;
   border: 1px solid white;
-  padding: 2rem 12rem;
+  color: white;
+  font-size: 5rem;
   cursor: pointer;
 }
 
@@ -206,7 +263,7 @@ body {
   margin-top: 2em;
 }
 .offer__card {
-  padding: 1.8em 2em;
+  padding: 2.2em 2.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,6 +271,7 @@ body {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
   border-radius: 8px;
   transition: 0.3s;
+  margin-bottom: 2rem;
 }
 .offer__card:hover {
   box-shadow: 0 0 8px px rgba(0, 0, 0, 0.82);
@@ -233,11 +291,11 @@ body {
   margin-top: 1.4rem;
 }
 .offer__card--options li {
-  padding: 0.4rem;
+  padding: 0.6rem;
   font-size: 1.8rem;
 }
 .offer__card--options li .fa-check {
-  color: green;
+  color: rgb(3, 250, 3);
   margin-right: 6px;
 }
 .offer__card--options li .fa-minus {
@@ -299,12 +357,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 34vh;
 }
 .footer__logo {
   width: 48%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 5rem;
 }
 .footer__logo i {
@@ -313,6 +370,9 @@ body {
 .footer__logo a {
   text-decoration: none;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
 }
 .footer__info {
   width: 48%;
@@ -344,4 +404,162 @@ body {
   padding: 30px 0;
   font-size: 1.4rem;
   border-top: 1px solid gray;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 90%;
+  }
+  .burger__btn {
+    display: flex;
+  }
+  .offer__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us__card {
+    flex-direction: column;
+  }
+  .about-us__card__image-box,
+  .about-us__card__info {
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-us__card__info h3 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer__info {
+    flex-direction: column;
+  }
+  .footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
+  .footer__info,
+  .footer__info--column {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__logo {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 90%;
+  }
+  .nav {
+    display: none;
+  }
+  .burger__btn {
+    display: flex;
+  }
+  .offer__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us__card {
+    flex-direction: column;
+  }
+  .about-us__card__image-box,
+  .about-us__card__info {
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-us__card__info h3 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer__info {
+    flex-direction: column;
+  }
+  .footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
+  .footer__info,
+  .footer__info--column {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__logo {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .footer__info--column--heading {
+    text-align: center;
+  }
+  .nav {
+    display: none;
+  }
+  .burger__btn {
+    display: flex;
+  }
+}
+@media (min-width: 1240px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .offer__cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-us__card {
+    flex-direction: row;
+  }
+  .footer__info {
+    flex-direction: row;
+  }
+  .about-us__card__image-box,
+  .about-us__card__info {
+    width: 50%;
+    margin-left: 5%;
+  }
+  .about-us__card__info h3 {
+    text-align: left;
+    margin-top: 0;
+  }
+  .footer .wrapper {
+    flex-direction: row;
+  }
+  .footer__info {
+    flex-direction: row;
+  }
+  .about-us__card__info h3 {
+    text-align: center;
+    margin-top: 0;
+  }
+  .footer .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__info {
+    justify-content: space-between;
+    align-items: start;
+  }
+  .footer__info--column {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo {
+    width: 48%;
+    justify-content: start;
+    align-items: start;
+  }
+  .nav {
+    display: flex;
+  }
+  .burger__btn {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
