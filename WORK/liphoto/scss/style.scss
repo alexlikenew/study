@@ -48,19 +48,91 @@ table {
 	position: relative;
 	width: 100%;
 	height: auto;
-	max-width: 1200px;
+	max-width: 1700px;
 	font-size: 2.4rem;
 }
 .font-advent-pro {
-	font-family: "Advent Pro", sans-serif;
+	font-family: 'Advent Pro', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 100;
 	font-style: normal;
-	font-variation-settings:
-	  "wdth" 100;
-  }
-header {
-	.logo {
-	
+	font-variation-settings: 'wdth' 100;
+}
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+	}
+	&__topNav {
+		width: 50%;
+		nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			list-style: none;
+			font-family: Oswald;
+			font-weight: 700;
+			font-style: normal;
+			line-height: 1.6em;
+			font-size: 20px;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 5px;
+			a {
+				color: black;
+			}
+		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		h2 {
+			width: 100%;
+			text-align: center;
+			font-size: 7rem;
+		}
+		&__text {
+			font-size: 2rem;
+			text-align: center;
+			font-family: Oswald;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 1.6em;
+			font-size: 19px;
+			text-transform: capitalize;
+			text-decoration: none;
+			letter-spacing: 1.11px;
+			color: #030303;
+			margin-top: 0.2em;
+			width: 100%;
+		}
+	}
+}
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 8rem;
+	.elements {
+		display: flex;
+		
+		&__element {
+			display: block;
+			margin-right: 2rem;
+			&__image {
+				width: 340px;
+				height: 420px;
+			}
+			&__text {
+			}
+		}
 	}
 }
