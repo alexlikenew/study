@@ -1,0 +1,102 @@
+@use 'colors' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main-color-text {
+	color: $mainColor;
+}
+.shadow-bg {
+	background-color: rgba($color: #000000, $alpha: 0.9);
+}
+
+.section-title{
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline{
+	position: absolute;
+	
+}
+
+nav {
+	z-index: 10;
+	transition: 0.7s;
+}
+.nav-link,
+.navbar-nav .nav-link.show,
+.navbar-brand,
+.fa-bars {
+	color: $whiteColor;
+	text-transform: uppercase;
+}
+.nav-link:focus,
+.nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-brand:hover {
+	color: $mainColor;
+}
+.navbar-toggler {
+	padding: 20px;
+}
+.navbar-brand {
+	font-weight: 700;
+}
+.hero-img {
+	position: relative;
+	background-image: url('../img/playstation-1845880_640.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	z-index: 0;
+}
+.hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex-direction: column;
+	color: $whiteColor;
+}
+.hero-shadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($color: #00000015, $alpha: 0.4);
+	z-index: -5;
+}
+.fa-chevron-down {
+	position: absolute;
+	bottom: 10px;
+	font-size: 30px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+	.hero-text {
+		h1 {
+			font-size: 42px;
+		}
+		p {
+			font-size: 22px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.hero-img {
+		background-image: url('../img/playstation-1845880_1920.jpg');
+	}
+}
