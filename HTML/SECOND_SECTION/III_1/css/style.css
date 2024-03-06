@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Comic Neue", cursive;
+  background: radial-gradient(circle, rgb(43, 44, 46) 13%, rgb(25, 25, 25) 65%);
+}
+
+.cards {
+  display: flex;
+  width: 1000px;
+}
+
+.card {
+  position: relative;
+  margin: 20px;
+  height: 700px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  width: 50%;
+  overflow: hidden;
+}
+
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px black;
+  cursor: grab;
+  z-index: 10;
+}
+
+button:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+.one {
+  background-image: url("../img/portrait-657116_1280.jpg");
+}
+
+.two {
+  background-image: url("../img/man-1690965_1280.jpg");
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  padding: 80px 30px;
+  background-color: rgba(25, 25, 25, 0.8);
+  color: white;
+  -webkit-clip-path: circle(0 at 50% 90%);
+          clip-path: circle(0 at 50% 90%);
+  transition: 0.8s;
+}
+
+h1 {
+  color: rgba(255, 217, 0, 0.452);
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: rgba(255, 217, 0, 0.842);
+}/*# sourceMappingURL=style.css.map */
