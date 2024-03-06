@@ -90,8 +90,11 @@ table {
   text-decoration: none;
   letter-spacing: 5px;
 }
-.header__topNav nav a {
+.header__topNav nav li a {
   color: black;
+}
+.header__topNav nav li:hover a {
+  animation: colorRotate 3s linear 0s infinite;
 }
 .header__info {
   display: flex;
@@ -102,6 +105,7 @@ table {
   width: 100%;
   text-align: center;
   font-size: 7rem;
+  color: #030303;
 }
 .header__info__text {
   font-size: 2rem;
@@ -117,6 +121,10 @@ table {
   color: #030303;
   margin-top: 0.2em;
   width: 100%;
+  cursor: default;
+}
+.header__info__text:hover {
+  animation: colorRotate 3s linear 0s infinite;
 }
 
 .main {
@@ -161,7 +169,120 @@ table {
   text-align: center;
   letter-spacing: 0.06em;
   color: white;
+  cursor: default;
 }
 .main .elements__element:hover p {
   display: block;
+  text-shadow: 4px 18px 26px rgb(66, 68, 90);
+}
+.main .elements__element:hover img {
+  opacity: 0.82;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.footer .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.footer__bottomNav {
+  width: 50%;
+}
+.footer__bottomNav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: Oswald;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.footer__bottomNav nav a {
+  color: black;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.footer__info h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 7rem;
+  color: #030303;
+}
+.footer__info__text {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Oswald;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 19px;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1.11px;
+  color: #030303;
+  margin-top: 0.2em;
+  width: 100%;
+}
+.footer__rights {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  border-top: 1px solid gray;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Oswald;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 19px;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1.11px;
+  color: #030303;
+  width: 100%;
+}
+.footer__rights p a {
+  margin-left: 10px;
+}
+.footer__rights p a img {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
 }/*# sourceMappingURL=style.css.map */
