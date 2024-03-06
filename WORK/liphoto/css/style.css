@@ -128,12 +128,40 @@ table {
 }
 .main .elements {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .main .elements__element {
-  display: block;
-  margin-right: 2rem;
+  position: relative;
+  width: 19%;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  text-decoration: none;
 }
 .main .elements__element__image {
-  width: 340px;
-  height: 420px;
+  width: 100%;
+}
+.main .elements__element p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  color: black;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.7em;
+  font-size: 52px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: white;
+}
+.main .elements__element:hover p {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

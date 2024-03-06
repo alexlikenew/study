@@ -123,15 +123,41 @@ table {
 	margin-top: 8rem;
 	.elements {
 		display: flex;
-		
+		flex-wrap: wrap;
+		flex-direction: row;
 		&__element {
-			display: block;
-			margin-right: 2rem;
+			position: relative;
+			width: 19%;
+			margin-right: 1%;
+			margin-bottom: 10px;
+			transition: .3s;
+			text-decoration: none;
 			&__image {
-				width: 340px;
-				height: 420px;
+				width: 100%;
 			}
-			&__text {
+			p {
+				display: none;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: .3s;
+				color: black;
+				text-transform: uppercase;
+				font-family: Oswald;
+				font-weight: 700;
+				font-style: normal;
+				line-height: 1.7em;
+				font-size: 52px;
+				text-transform: none;
+				text-decoration: none;
+				text-align: center;
+				letter-spacing: .06em;
+				color: white;
+				
+			}
+			&:hover p{
+				display: block;
 			}
 		}
 	}
