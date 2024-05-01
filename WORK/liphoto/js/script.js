@@ -1,1 +1,1 @@
-const variable = document.querySelector
+
