@@ -1,1 +1,1 @@
-const newVariable = document.querySelector('body')
+const newVar = document.querySelector('body')
