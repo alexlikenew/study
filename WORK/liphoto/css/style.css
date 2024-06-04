@@ -268,7 +268,6 @@ table {
   width: 30px;
   height: 30px;
 }
-
 @keyframes colorRotate {
   from {
     color: #6666ff;
