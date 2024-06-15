@@ -12,6 +12,7 @@
 html,
 body {
 	height: 100%;
+	width: 100%;
 }
 
 html {
@@ -19,7 +20,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: 'Open Sans';
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 }
 a {
@@ -49,4 +50,296 @@ textarea {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1100px;
+}
+.section-heading {
+	margin-top: 2.5em;
+	margin-bottom: 2rem;
+	width: 100%;
+	font-size: 4rem;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+.box-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.527);
+}
+.box-shadow-green {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(6, 20, 9, 0.74);
+}
+.nav {
+	width: 100%;
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 110px;
+	}
+	&__title {
+		height: 100%;
+		width: 30%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		&__text {
+			font-size: 5rem;
+			font-family: 'Montserrat', sans-serif;
+		}
+		&__tree {
+			font-size: 4rem;
+			margin-right: 1.2rem;
+			margin-left: 2rem;
+			color: rgb(63, 62, 62);
+		}
+	}
+	&__menu {
+		display: flex;
+		justify-content: flex-end;
+		width: 70%;
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			list-style: none;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 2.2rem;
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				width: 100%;
+				padding-left: 3.2rem;
+				padding-right: 3.2rem;
+				text-decoration: none;
+				color: white;
+				a {
+					color: black;
+				}
+				&:hover {
+					background-color: black;
+					color: white;
+					cursor: pointer;
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+main {
+	.header {
+		width: 100%;
+		height: 48vh;
+		position: relative;
+		background-image: url('../img/jungle-1807476_1920.jpg');
+		background-position: 50% 70%;
+		background-size: cover;
+		&__text-box {
+			position: relative;
+			width: 100%;
+			padding-top: 15rem;
+			z-index: 1000;
+			color: white;
+
+			&__title {
+				font-size: 3.6rem;
+				font-weight: 300;
+			}
+			&__text {
+				margin-top: 1rem;
+				font-size: 4rem;
+				font-weight: 700;
+			}
+		}
+	}
+	.about-us {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__title {
+			margin-bottom: 6rem;
+		}
+		&__box {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 5rem;
+			&__img {
+				width: 45%;
+				img {
+					max-width: 100%;
+				}
+			}
+			&__info {
+				width: 50%;
+				h3 {
+					font-size: 3.2rem;
+				}
+				p {
+					margin-top: 1rem;
+					font-size: 2rem;
+					line-height: 4rem;
+				}
+			}
+		}
+	}
+
+	.adventure {
+		position: relative;
+		width: 100%;
+		height: 40vh;
+		background-image: url('../img/girl-5785590_1920.jpg');
+		background-position: 100% 48%;
+		background-size: cover;
+		&__box {
+			position: relative;
+
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			&__text {
+				padding: 4rem 15rem 4rem 15rem;
+				color: white;
+				font-size: 5rem;
+				border: 1px solid white;
+			}
+		}
+	}
+
+	.offer {
+		h2 {
+			margin-bottom: 3rem;
+		}
+		&__header {
+			margin-top: 2.5em;
+			margin-bottom: 2rem;
+			width: 100%;
+			font-size: 2rem;
+			font-weight: 300;
+			text-align: center;
+		}
+		&__cards {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10rem;
+			margin-top: 6rem;
+		}
+		&__card {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem 3.6rem;
+			box-shadow: 0px 0px 14px -7px rgba(66, 68, 90, 1);
+			border-radius: 12px;
+			transition: transform 0.6s;
+			&:hover {
+				transform: scale(1.05);
+			}
+			&:hover .offer__card__price{
+				color: rgb(20, 216, 20);;
+			}
+			&__title {
+				margin-top: 2rem;
+				font-size: 3.2rem;
+			}
+			&__price {
+				font-size: 4rem;
+				font-weight: bold;
+				margin-top: 2rem;
+				transition: color 1s;
+				&__dollar {
+					font-size: 5rem;
+				}
+			}
+			ul {
+				list-style: none;
+				li {
+					margin-top: 1.6rem;
+					i {
+						margin-right: 1rem;
+					}
+					.fa-check {
+						color: rgb(20, 216, 20);
+					}
+					.fa-minus {
+						color: gray;
+					}
+				}
+				.offer-not-included {
+					color: gray;
+				}
+			}
+			&__button {
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+				padding: 1rem 6rem;
+				border-radius: 6px;
+				background: transparent;
+				font-size: 2rem;
+				box-shadow: 0px 0px 14px -2px rgba(66, 68, 90, 1);
+				transition: transform 0.6s, color 0.6s, background-color 0.6s;
+				&:hover {
+					transform: scale(1.1);
+					background-color: rgb(78, 216, 78);
+					color: white;
+				}
+			}
+		}
+	}
+}
+.footer {
+	background-color: rgb(240, 238, 238);
+	&__box {
+		display: flex;
+		width: 100%;
+		padding-bottom: 6rem;
+		padding-top: 6rem;
+	}
+	&__logo {
+		width: 40%;
+	}
+	&__info {
+		width: 60%;
+		display: flex;
+		justify-content: flex-end;
+		&__box {
+			display: flex;
+			flex-direction: column;
+			justify-self: flex-end;
+			&__title {
+				font-size: 2.8rem;
+				font-weight: bold;
+				padding: 2rem 4rem 2rem 0;
+			}
+			a {
+				text-decoration: none;
+				line-height: 4.4rem;
+				color: black;
+			}
+		}
+	}
+	&__bottom-text {
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 3rem;
+	}
 }
