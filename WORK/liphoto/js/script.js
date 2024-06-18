@@ -1,4 +1,5 @@
 const header = document.querySelector('header')
 const main = document.querySelector('main')
 const footer = document.querySelector('footer')
-const elementImge = document.querySelector('.elements__element__image')
+const elementImage = document.querySelector('.elements__element__image')
+const elementText = document.querySelector('.elements__element__text')
