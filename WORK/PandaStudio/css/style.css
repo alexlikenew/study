@@ -1,3 +1,35 @@
+.section-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  font-family: "Jost", sans-serif;
+  font-size: 3rem;
+}
+
+.btn-reservation {
+  padding: 1rem 3rem 1rem 3rem;
+  font-family: "Jost", sans-serif;
+  font-size: 3rem;
+  background-color: #d1fd08;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.4s, color 0.4s;
+}
+.btn-reservation:hover {
+  background-color: #1a1a1a;
+  color: #d1fd08;
+}
+
+.bg-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
 *,
 *::after,
 *::before {
@@ -10,6 +42,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "Jost", sans-serif;
 }
 
 html {
@@ -58,10 +91,12 @@ table {
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   display: flex;
   background-color: #d1fd08;
+  z-index: 2000;
 }
 .nav .nav-box {
   display: flex;
@@ -148,11 +183,146 @@ table {
   width: 30%;
 }
 
+.header {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../img/stuio-panda-trening.jpg");
+  background-position: 50% 60%;
+  background-size: cover;
+  position: relative;
+}
+.header__bg-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+.header__text-box {
+  width: 100%;
+  position: relative;
+  padding: 10rem 2rem 0 2rem;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  font-family: "Jost", sans-serif;
+}
+.header__text-box__title {
+  font-size: 7rem;
+}
+.header__text-box__text {
+  position: relative;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #d1fd08;
+  padding-bottom: 2rem;
+}
+.header__text-box__text::after {
+  position: absolute;
+  width: 40%;
+  height: 4px;
+  background-color: #d1fd08;
+  bottom: 0;
+  left: 30%;
+  content: "";
+}
+.header__text-box__underline {
+  margin-top: 5rem;
+  font-size: 3rem;
+  padding: 1rem;
+}
+.header__text-box__underline span {
+  color: #d1fd08;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+}
+.services__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 2rem 2rem;
+  margin: 0 1rem 0 1rem;
+}
+.services__option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.services__option:last-child {
+  margin-top: 4rem;
+}
+.services__option__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.services__option__img--training {
+  background-image: url("../img/studio-panda-sala.jpg");
+}
+.services__option__img--massage {
+  background-image: url("../img/studio-panda-masaz.jpg");
+}
+.services__option__img .bg-box {
+  background-color: rgba(208, 253, 8, 0.397);
+  transition: background-color 0.3s;
+}
+.services__option__img__heading {
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Jost", sans-serif;
+  z-index: 1000;
+  text-shadow: 0px 0px 11px rgb(66, 68, 90);
+}
+.services__option__img:hover .bg-box {
+  background-color: rgba(208, 253, 8, 0.103);
+}
+.services__option p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header__text-box {
+    padding-top: 15rem;
+  }
+}
 @media (min-width: 992px) {
+  .section-heading {
+    font-size: 4rem;
+  }
+  .header {
+    height: 70vh;
+  }
+  .header__text-box {
+    padding-top: 15rem;
+  }
   .burger-btn {
     position: fixed;
     top: 20px;
     right: 30px;
+  }
+  .services__box {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .services__option {
+    width: 40%;
+  }
+  .services__option:last-child {
+    margin-top: 0;
   }
 }
 @media (min-width: 1100px) {
