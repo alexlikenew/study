@@ -278,7 +278,59 @@ table {
 
 }
 // SERVICES
+// OFFERS
+.offers{
+	width: 100%;
+	
+	&__box{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0 4rem 2rem 4rem;
+	}
+	&__offer{
+		width: 100%;
+		margin-bottom: 3.4rem;
+		padding: 2rem 2rem 2rem 2rem;
+		border-radius: 6px;
+		// box-shadow: 0px 0px 10px -3px rgba(66, 68, 90, 1);
+		img{
+			width: 100%;
+			border-radius: 6px;
 
+		}
+		&__heading{
+			font-size: 3.6rem;
+			font-family: 'Jost', sans-serif;
+			padding: 1rem 0 1rem 0;
+		}
+		p{
+			margin-bottom: 1rem;
+			font-size: 2.2rem;
+			font-family: 'Jost', sans-serif;
+		}
+		a{
+			font-size: 2.2rem;
+			font-family: 'Jost', sans-serif;
+			color: blue;
+		}
+		
+}}
+// OFFERS
+// ABOUT ME
+
+.about-me{
+	&__heading{
+		img{
+			margin-left: 1.4rem;
+			width: 10rem;
+		}
+	}
+}
+// ABOUT ME
 // ==============================
 // MEDIA QUERIES
 // ==============================
@@ -291,6 +343,15 @@ table {
 		
 		&__text-box {
 			padding-top: 15rem;
+		}
+	}
+	.offers{
+		&__box{
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+		&__offer{
+				width: 45%;
 		}
 	}
 }
@@ -331,6 +392,12 @@ table {
 		&__desktop {
 			display: flex;
 			margin-right: 0.9rem;
+		}
+	}
+	.offers{
+		
+		&__offer{
+				width: 32%;
 		}
 	}
 }

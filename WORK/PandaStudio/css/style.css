@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
   font-family: "Jost", sans-serif;
   font-size: 3rem;
 }
@@ -274,7 +274,7 @@ table {
   background-image: url("../img/studio-panda-masaz.jpg");
 }
 .services__option__img .bg-box {
-  background-color: rgba(208, 253, 8, 0.397);
+  background-color: rgba(208, 253, 8, 0.267);
   transition: background-color 0.3s;
 }
 .services__option__img__heading {
@@ -294,9 +294,59 @@ table {
   text-align: center;
 }
 
+.offers {
+  width: 100%;
+}
+.offers__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 4rem 2rem 4rem;
+}
+.offers__offer {
+  width: 100%;
+  margin-bottom: 3.4rem;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 6px;
+}
+.offers__offer img {
+  width: 100%;
+  border-radius: 6px;
+}
+.offers__offer__heading {
+  font-size: 3.6rem;
+  font-family: "Jost", sans-serif;
+  padding: 1rem 0 1rem 0;
+}
+.offers__offer p {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-family: "Jost", sans-serif;
+}
+.offers__offer a {
+  font-size: 2.2rem;
+  font-family: "Jost", sans-serif;
+  color: blue;
+}
+
+.about-me__heading img {
+  margin-left: 1.4rem;
+  width: 10rem;
+}
+
 @media (min-width: 768px) {
   .header__text-box {
     padding-top: 15rem;
+  }
+  .offers__box {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .offers__offer {
+    width: 45%;
   }
 }
 @media (min-width: 992px) {
@@ -332,5 +382,8 @@ table {
   .nav__desktop {
     display: flex;
     margin-right: 0.9rem;
+  }
+  .offers__offer {
+    width: 32%;
   }
 }/*# sourceMappingURL=style.css.map */
