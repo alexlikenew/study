@@ -13,7 +13,7 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	font-family: 'Jost', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -73,7 +73,7 @@ table {
 	&__logo {
 		display: flex;
 		margin-top: 2rem;
-		margin-left: 4rem;
+		margin-left: 0;
 		margin-bottom: 2rem;
 		width: 30%;
 		&__img {
@@ -94,7 +94,7 @@ table {
 			padding: 4rem 2rem 2rem 2rem;
 			color: $secondary-color;
 			// border-radius: 8px;
-			font-family: 'Jost', sans-serif;
+			font-family: 'Poppins', sans-serif;
 			font-size: 1.8rem;
 			font-weight: 600;
 			text-transform: uppercase;
@@ -171,7 +171,6 @@ table {
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.747);
-		
 	}
 	&__text-box {
 		width: 100%;
@@ -180,7 +179,7 @@ table {
 		color: white;
 		text-align: center;
 		z-index: 1000;
-		font-family: 'Jost', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		&__title {
 			font-size: 7rem;
 		}
@@ -214,28 +213,27 @@ table {
 // HEADER
 
 // SERVICES
-.services{
+.services {
 	width: 100%;
 	display: flex;
-	&__box{
+	&__box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding:0 2rem 2rem 2rem;
+		padding: 0 2rem 2rem 2rem;
 		margin: 0 1rem 0 1rem;
-		
 	}
-	&__option{
+	&__option {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		&:last-child{
+		&:last-child {
 			margin-top: 4rem;
 		}
-		&__img{
+		&__img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -245,122 +243,290 @@ table {
 			background-size: cover;
 			border-radius: 8px;
 			cursor: pointer;
-			&--training{
+			&--training {
 				background-image: url('../img/studio-panda-sala.jpg');
-		}
-			&--massage{
-				background-image: url('../img/studio-panda-masaz.jpg');
-		}
-			.bg-box{
-				background-color: $green-box;
-				transition: background-color .3s;
 			}
-			&__heading{
+			&--massage {
+				background-image: url('../img/studio-panda-masaz.jpg');
+			}
+			.bg-box {
+				background-color: $green-box;
+				transition: background-color 0.3s;
+			}
+			&__heading {
 				color: $pure-white;
 				font-size: 5rem;
-				font-family: 'Jost', sans-serif;
+				font-family: 'Poppins', sans-serif;
 				z-index: 1000;
 				text-shadow: 0px 0px 11px rgba(66, 68, 90, 1);
 			}
-			&:hover{
-				.bg-box{
+			&:hover {
+				.bg-box {
 					background-color: rgba(208, 253, 8, 0.103);
 				}
 			}
 		}
-		p{
+		&__text {
+			line-height: 140%;
+			&--bold {
+				font-weight: 700;
+			}
+		}
+		p {
 			margin-top: 2rem;
 			margin-bottom: 3rem;
 			font-size: 2.4rem;
 			text-align: center;
+			font-family: 'Poppins';
+			line-height: 145%;
 		}
 	}
-
 }
 // SERVICES
 // OFFERS
-.offers{
+.offers {
 	width: 100%;
-	
-	&__box{
+
+	&__box {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: wrap;
-		padding: 0 4rem 2rem 4rem;
+		padding: 0 3rem 2rem 3rem;
 	}
-	&__offer{
+	&__offer {
 		width: 100%;
 		margin-bottom: 3.4rem;
-		padding: 2rem 2rem 2rem 2rem;
+		// padding: 2rem 2rem 2rem 2rem;
 		border-radius: 6px;
 		// box-shadow: 0px 0px 10px -3px rgba(66, 68, 90, 1);
-		img{
+		img {
 			width: 100%;
 			border-radius: 6px;
-
 		}
-		&__heading{
+		&__heading {
 			font-size: 3.6rem;
-			font-family: 'Jost', sans-serif;
+			font-family: 'Poppins', sans-serif;
 			padding: 1rem 0 1rem 0;
 		}
-		p{
+		p {
 			margin-bottom: 1rem;
-			font-size: 2.2rem;
-			font-family: 'Jost', sans-serif;
+			font-size: 2.4rem;
+			font-family: 'Poppins', sans-serif;
+			text-align: left;
+			line-height: 145%;
 		}
-		a{
-			font-size: 2.2rem;
-			font-family: 'Jost', sans-serif;
-			color: blue;
+		a {
+			font-size: 2.4rem;
+			font-family: 'Poppins', sans-serif;
+			text-align: left;
+			line-height: 145%;
+			color: #0d99ff;
 		}
-		
-}}
+	}
+}
 // OFFERS
 // ABOUT ME
 
-.about-me{
-	&__heading{
-		img{
+.about-me {
+	width: 100%;
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__heading {
+		padding-top: 4rem;
+		img {
 			margin-left: 1.4rem;
 			width: 10rem;
 		}
 	}
+	&__box {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// background-color: grey;
+		padding: 1.5em;
+		&__img {
+			max-width: 100%;
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 2.8rem 1rem 1rem 1rem;
+			font-size: 2.4rem;
+			font-family: 'Poppins', sans-serif;
+			text-align: left;
+			line-height: 145%;
+			&--bold {
+				font-weight: 700;
+			}
+			button {
+				margin-top: 3rem;
+			}
+		}
+	}
 }
 // ABOUT ME
+
+// DRIVE
+
+.map {
+	width: 100%;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.map-heading {
+		padding: 4rem 4rem 1rem 4rem;
+	}
+	&__box {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		padding: 0 2.5rem 2.5rem 2.5rem;
+		&__info {
+			width: 100%;
+			padding: 1rem 1rem 1rem 1rem;
+			color: $secondary-color;
+			ul {
+				list-style: none;
+				font-size: 2.4rem;
+				font-family: 'Poppins', sans-serif;
+				text-align: left;
+				line-height: 145%;
+				li {
+					text-align: center;
+					margin-top: 2rem;
+					img {
+						width: 20px;
+						height: 20px;
+						margin-right: 0.4rem;
+					}
+				}
+			}
+		}
+		&__map {
+			width: 100%;
+			margin-top: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			iframe {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+// DRIVE
+// FOOTER
+
+.footer {
+	position: relative;
+	width: 100%;
+
+	margin-top: 5rem;
+	background-image: url('../img/stuio-panda-trening.jpg');
+	background-position: 50% 60%;
+	background-size: cover;
+	overflow: hidden;
+	.footer-heading {
+		position: relative;
+		color: $pure-white;
+		z-index: 1000;
+	}
+	&__box {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 0 2.5rem 2.5rem 2.5rem;
+		font-size: 2.4rem;
+		font-family: 'Poppins', sans-serif;
+		line-height: 145%;
+		color: $pure-white;
+		z-index: 1000;
+		ul {
+			list-style: none;
+			font-size: 3.4rem;
+			font-family: 'Poppins', sans-serif;
+			text-align: left;
+			line-height: 250%;
+			li {
+				text-align: center;
+				margin-top: 2rem;
+				a {
+					color: $pure-white;
+				}
+				img {
+					width: 40px;
+					height: 40px;
+					margin-right: 0.4rem;
+					transform: translateY(20%);
+				}
+			}
+		}
+	}
+	&__rights {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 4vh;
+		background-color: #101922;
+		color: gray;
+		text-transform: uppercase;
+		z-index: 1000;
+
+		font-family: 'Poppins', sans-serif;
+		text-align: left;
+		line-height: 250%;
+	}
+}
+
+// FOOTER
 // ==============================
 // MEDIA QUERIES
 // ==============================
 
 @media (min-width: 576px) {
-
 }
 @media (min-width: 768px) {
 	.header {
-		
 		&__text-box {
 			padding-top: 15rem;
 		}
 	}
-	.offers{
-		&__box{
+	.offers {
+		&__box {
 			flex-direction: row;
 			justify-content: space-evenly;
 		}
-		&__offer{
-				width: 45%;
+		&__offer {
+			width: 45%;
 		}
 	}
 }
 @media (min-width: 992px) {
-	.section-heading{
+	.section-heading {
 		font-size: 4rem;
 	}
 	.header {
-		
 		height: 70vh;
 		&__text-box {
 			padding-top: 15rem;
@@ -371,14 +537,14 @@ table {
 		top: 20px;
 		right: 30px;
 	}
-	.services{
-		&__box{
+	.services {
+		&__box {
 			flex-direction: row;
 			justify-content: space-evenly;
 		}
-		&__option{
+		&__option {
 			width: 40%;
-			&:last-child{
+			&:last-child {
 				margin-top: 0;
 			}
 		}
@@ -394,10 +560,9 @@ table {
 			margin-right: 0.9rem;
 		}
 	}
-	.offers{
-		
-		&__offer{
-				width: 32%;
+	.offers {
+		&__offer {
+			width: 32%;
 		}
 	}
 }

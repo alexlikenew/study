@@ -5,13 +5,13 @@
   justify-content: center;
   padding-top: 8rem;
   padding-bottom: 6rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
 }
 
 .btn-reservation {
   padding: 1rem 3rem 1rem 3rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   background-color: #d1fd08;
   font-weight: 700;
@@ -42,7 +42,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -106,7 +106,7 @@ table {
 .nav__logo {
   display: flex;
   margin-top: 2rem;
-  margin-left: 4rem;
+  margin-left: 0;
   margin-bottom: 2rem;
   width: 30%;
 }
@@ -127,7 +127,7 @@ table {
 .nav__desktop__item {
   padding: 4rem 2rem 2rem 2rem;
   color: #1a1a1a;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -204,7 +204,7 @@ table {
   color: white;
   text-align: center;
   z-index: 1000;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .header__text-box__title {
   font-size: 7rem;
@@ -280,18 +280,26 @@ table {
 .services__option__img__heading {
   color: #fff;
   font-size: 5rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   z-index: 1000;
   text-shadow: 0px 0px 11px rgb(66, 68, 90);
 }
 .services__option__img:hover .bg-box {
   background-color: rgba(208, 253, 8, 0.103);
 }
+.services__option__text {
+  line-height: 140%;
+}
+.services__option__text--bold {
+  font-weight: 700;
+}
 .services__option p {
   margin-top: 2rem;
   margin-bottom: 3rem;
   font-size: 2.4rem;
   text-align: center;
+  font-family: "Poppins";
+  line-height: 145%;
 }
 
 .offers {
@@ -304,12 +312,11 @@ table {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0 4rem 2rem 4rem;
+  padding: 0 3rem 2rem 3rem;
 }
 .offers__offer {
   width: 100%;
   margin-bottom: 3.4rem;
-  padding: 2rem 2rem 2rem 2rem;
   border-radius: 6px;
 }
 .offers__offer img {
@@ -318,23 +325,182 @@ table {
 }
 .offers__offer__heading {
   font-size: 3.6rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 1rem 0 1rem 0;
 }
 .offers__offer p {
   margin-bottom: 1rem;
-  font-size: 2.2rem;
-  font-family: "Jost", sans-serif;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 145%;
 }
 .offers__offer a {
-  font-size: 2.2rem;
-  font-family: "Jost", sans-serif;
-  color: blue;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 145%;
+  color: #0d99ff;
 }
 
+.about-me {
+  width: 100%;
+}
+.about-me .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-me__heading {
+  padding-top: 4rem;
+}
 .about-me__heading img {
   margin-left: 1.4rem;
   width: 10rem;
+}
+.about-me__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+.about-me__box__img {
+  max-width: 100%;
+}
+.about-me__box__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.8rem 1rem 1rem 1rem;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 145%;
+}
+.about-me__box__text--bold {
+  font-weight: 700;
+}
+.about-me__box__text button {
+  margin-top: 3rem;
+}
+
+.map {
+  width: 100%;
+}
+.map__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.map .map-heading {
+  padding: 4rem 4rem 1rem 4rem;
+}
+.map__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2.5rem 2.5rem 2.5rem;
+}
+.map__box__info {
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  color: #1a1a1a;
+}
+.map__box__info ul {
+  list-style: none;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 145%;
+}
+.map__box__info ul li {
+  text-align: center;
+  margin-top: 2rem;
+}
+.map__box__info ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.4rem;
+}
+.map__box__map {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map__box__map iframe {
+  max-width: 100%;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  background-image: url("../img/stuio-panda-trening.jpg");
+  background-position: 50% 60%;
+  background-size: cover;
+  overflow: hidden;
+}
+.footer .footer-heading {
+  position: relative;
+  color: #fff;
+  z-index: 1000;
+}
+.footer__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 145%;
+  color: #fff;
+  z-index: 1000;
+}
+.footer__box ul {
+  list-style: none;
+  font-size: 3.4rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 250%;
+}
+.footer__box ul li {
+  text-align: center;
+  margin-top: 2rem;
+}
+.footer__box ul li a {
+  color: #fff;
+}
+.footer__box ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.4rem;
+  transform: translateY(20%);
+}
+.footer__rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 4vh;
+  background-color: #101922;
+  color: gray;
+  text-transform: uppercase;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 250%;
 }
 
 @media (min-width: 768px) {
