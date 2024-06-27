@@ -178,8 +178,10 @@ table {
 		text-align: center;
 		z-index: 1000;
 		font-family: 'Poppins', sans-serif;
+
 		&__title {
 			font-size: 7rem;
+			animation: fadeIn 1.5s;
 		}
 		&__text {
 			position: relative;
@@ -187,6 +189,7 @@ table {
 			font-weight: 700;
 			color: $main-color;
 			padding-bottom: 2rem;
+			animation: fadeIn 2s;
 			&::after {
 				position: absolute;
 				width: 40%;
@@ -201,6 +204,7 @@ table {
 			margin-top: 5rem;
 			font-size: 3rem;
 			padding: 1rem;
+			animation: fadeIn 2.5s;
 			span {
 				color: $main-color;
 			}
@@ -458,10 +462,9 @@ table {
 						color: $secondary-color;
 					}
 					.btn-apply {
-					
 						padding: 2rem;
 					}
-					&:last-child{
+					&:last-child {
 						margin-top: 5rem;
 					}
 				}
@@ -513,7 +516,7 @@ table {
 		position: relative;
 		display: flex;
 		justify-content: center;
-		
+
 		flex-direction: column;
 		padding: 0 2.5rem 2.5rem 2.5rem;
 		font-size: 2.4rem;
@@ -673,17 +676,16 @@ table {
 	.map {
 		&__box {
 			flex-direction: row;
-		
 		}
 	}
-	.footer{
-		&__box{
+	.footer {
+		&__box {
 			display: flex;
 			flex-direction: row;
-			ul{
+			ul {
 				width: 45%;
 			}
-			.get-in-touch{
+			.get-in-touch {
 				width: 40%;
 			}
 		}
@@ -708,4 +710,12 @@ table {
 	// ABOUT-ME
 
 	// ABOUT-ME
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
