@@ -56,7 +56,7 @@ table {
 }
 // NAV
 .nav {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	display: flex;
@@ -228,7 +228,7 @@ table {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		button{
+		button {
 			background-color: transparent;
 			padding: 2rem;
 		}
@@ -329,7 +329,6 @@ table {
 			text-align: left;
 			line-height: 145%;
 		}
-		
 	}
 }
 // OFFERS
@@ -443,7 +442,7 @@ table {
 			color: $secondary-color;
 			ul {
 				list-style: none;
-				font-size: 2.4rem;
+				font-size: 1.6rem;
 				font-family: 'Poppins', sans-serif;
 				text-align: left;
 				line-height: 145%;
@@ -455,11 +454,15 @@ table {
 						height: 20px;
 						margin-right: 0.4rem;
 					}
-					a{
+					a {
 						color: $secondary-color;
 					}
-					.btn-apply{
+					.btn-apply {
+					
 						padding: 2rem;
+					}
+					&:last-child{
+						margin-top: 5rem;
 					}
 				}
 			}
@@ -510,7 +513,7 @@ table {
 		position: relative;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		
 		flex-direction: column;
 		padding: 0 2.5rem 2.5rem 2.5rem;
 		font-size: 2.4rem;
@@ -520,7 +523,7 @@ table {
 		z-index: 1000;
 		ul {
 			list-style: none;
-			font-size: 3.4rem;
+			font-size: 2.4rem;
 			font-family: 'Poppins', sans-serif;
 			text-align: left;
 			line-height: 250%;
@@ -670,6 +673,19 @@ table {
 	.map {
 		&__box {
 			flex-direction: row;
+		
+		}
+	}
+	.footer{
+		&__box{
+			display: flex;
+			flex-direction: row;
+			ul{
+				width: 45%;
+			}
+			.get-in-touch{
+				width: 40%;
+			}
 		}
 	}
 	// MAP
