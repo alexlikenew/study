@@ -5,10 +5,22 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 6rem;
 	padding-top: 8rem;
-	padding-bottom: 6rem;
+	padding-bottom: 1rem;
 	font-family: 'Poppins', sans-serif;
 	font-size: 3rem;
+	text-transform: uppercase;
+	position: relative;
+	&::after {
+		position: absolute;
+		width: 40%;
+		height: 4px;
+		background-color: $main-color;
+		bottom: 0;
+		left: 30%;
+		content: '';
+	}
 }
 .btn-reservation {
 	padding: 1rem 3rem 1rem 3rem;
@@ -21,6 +33,23 @@
 	&:hover {
 		background-color: $secondary-color;
 		color: $main-color;
+	}
+}
+.btn-apply {
+	color: $secondary-color;
+	padding: 1rem;
+	font-size: 2.4rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	text-align: left;
+	line-height: 145%;
+	border: 2px solid $main-color;
+	box-shadow: 0.3em 0.3em 0 0 $main-color, inset 0.3em 0.3em 0 0 $main-color;
+	transition: box-shadow 0.25s, color 0.25s;
+	&:hover,
+	&:focus {
+		box-shadow: 0 0 0 0 ($main-color), inset 6em 3.5em 0 0 ($main-color);
+		color: $secondary-color;
 	}
 }
 .bg-box {
