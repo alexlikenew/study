@@ -179,18 +179,19 @@ table {
 // HEADER
 .header {
 	width: 100%;
-	// height: 90vh;
-	// background-position: 100% 0;
-	background-size: 100%;
+	height: 100vh;
+	background-position: 50% 0;
+	background-size: 220%;
 	background-repeat: no-repeat;
 	position: relative;
-	min-height: 500px;
-	background-image: url('../img/panda-masaz-ivan-mishchenko-o-mnie.jpeg');
+	// min-height: 500px;
+	background-image: url('../img/Fit-Squad-Personal-Trainer-Toronto-Mobile.jpg');
+
 	.bg-box {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.247);
+		background-color: rgba(0, 0, 0, 0.63);
 		z-index: 1;
 	}
 	&__text-box {
@@ -200,6 +201,7 @@ table {
 		align-items: flex-start;
 		margin-top: 20rem;
 		z-index: 1000;
+
 		&__title {
 			// margin-top: 18rem;
 			font-size: clamp(61px, 8.333vw, 220px);
@@ -213,6 +215,15 @@ table {
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			// margin-bottom: 40px;
+			&--training,
+			&--massage {
+				font-weight: 700;
+				font-size: 23px;
+				color: $green-color;
+			}
+			&--massage {
+				color: orange;
+			}
 		}
 		&__text {
 			margin-top: 1rem;
@@ -237,6 +248,83 @@ table {
 			line-height: 120%;
 
 			text-transform: uppercase;
+		}
+	}
+}
+//  Section Transform Your Life
+.transform-life {
+	.wrapper {
+		padding: 30px 16px;
+	}
+	&__box {
+		&__training {
+			max-width: 100%;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			a {
+				margin-top: 1.4rem;
+				max-height: 20rem;
+				position: relative;
+				max-width: 100%;
+				color: $main-color;
+				.transform-life__box__training__image-box {
+					img {
+						max-width: 100%;
+						border-radius: 20px;
+						z-index: 1;
+					}
+				}
+
+				.transform-life__box__training__text-box,
+				.transform-life__box__training__text-box--massage {
+					position: absolute;
+					max-width: 60%;
+					z-index: 1000;
+					left: 0;
+					top: 0;
+					padding: 2rem;
+					font-weight: 700;
+					h2 {
+						font-weight: 900;
+						line-height: 100%;
+						font-style: normal;
+						font-family: 'Nexa', sans-serif;
+						font-size: 3rem;
+					}
+					p {
+						margin-top: 1rem;
+						font-size: 19px;
+					}
+					button {
+						border-radius: clamp(8px, 0.625vw, 24px);
+						border: 0;
+						padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
+						z-index: 0;
+						-webkit-tap-highlight-color: transparent;
+						-webkit-appearance: button;
+						background-color: #1e1f20;
+						background-image: none;
+						color: #fafafa;
+						cursor: pointer;
+						font-family: 'Inter', sans-serif;
+						font-size: clamp(16px, 0.938vw, 22px);
+						font-style: normal;
+						font-weight: 700;
+						line-height: 120%;
+						margin: 2rem 0;
+						text-transform: uppercase;
+					}
+				}
+				.transform-life__box__training__text-box--massage {
+					h2,
+					p {
+						color: $lightest-gray;
+					}
+				}
+			}
 		}
 	}
 }
