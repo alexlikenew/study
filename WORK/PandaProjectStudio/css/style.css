@@ -152,6 +152,10 @@ table {
   position: relative;
   background-image: url("../img/Fit-Squad-Personal-Trainer-Toronto-Mobile.jpg");
 }
+.header .wrapper {
+  height: 100%;
+  position: relative;
+}
 .header .bg-box {
   position: absolute;
   width: 100%;
@@ -164,11 +168,12 @@ table {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 20rem;
+  padding-top: 20rem;
   z-index: 1000;
+  height: 100%;
 }
 .header__text-box__title {
-  font-size: clamp(61px, 8.333vw, 220px);
+  font-size: 54px;
   font-weight: 900;
   line-height: 100%;
   letter-spacing: -4.8px;
@@ -221,6 +226,36 @@ table {
   line-height: 120%;
   text-transform: uppercase;
 }
+.header__text-box__more-info {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__text-box__more-info__image {
+  max-width: 20%;
+}
+.header__text-box__more-info__image img {
+  max-width: 100%;
+  border: 1px solid #FAF7F2;
+  border-radius: 14px;
+}
+.header__text-box__more-info__image a {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  z-index: 10;
+}
+.header__text-box__more-info__image a img {
+  border: none;
+}
+.header__text-box__more-info p {
+  max-width: 70%;
+}
 
 .transform-life .wrapper {
   padding: 40px 16px;
@@ -248,7 +283,7 @@ table {
 .transform-life__box__training a .transform-life__box__training__text-box,
 .transform-life__box__training a .transform-life__box__training__text-box--massage {
   position: absolute;
-  max-width: 60%;
+  max-width: 70%;
   z-index: 1000;
   left: 0;
   top: 0;
@@ -284,7 +319,7 @@ table {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-transform: uppercase;
 }
 .transform-life__box__training a .transform-life__box__training__text-box--massage h2,

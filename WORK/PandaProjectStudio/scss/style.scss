@@ -186,7 +186,10 @@ table {
 	position: relative;
 	// min-height: 500px;
 	background-image: url('../img/Fit-Squad-Personal-Trainer-Toronto-Mobile.jpg');
-
+.wrapper{
+	height: 100%;
+	position: relative;
+}
 	.bg-box {
 		position: absolute;
 		width: 100%;
@@ -199,12 +202,12 @@ table {
 		position: relative;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-top: 20rem;
+		padding-top: 20rem;
 		z-index: 1000;
-
+		height: 100%;
 		&__title {
 			// margin-top: 18rem;
-			font-size: clamp(61px, 8.333vw, 220px);
+			font-size: 54px;
 			font-weight: 900;
 			line-height: 100%;
 			letter-spacing: -4.8px;
@@ -250,7 +253,6 @@ table {
 			padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
 			z-index: 0;
 			-webkit-tap-highlight-color: transparent;
-
 			background-color: #d7fb00;
 			background-image: none;
 			color: #1e1f20;
@@ -260,8 +262,37 @@ table {
 			font-style: normal;
 			font-weight: 700;
 			line-height: 120%;
-
 			text-transform: uppercase;
+		}
+		&__more-info{
+			position: absolute;
+			bottom: 5rem;
+			left: 0;
+			z-index: 2000;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			&__image{
+				max-width: 20%;
+				img{
+					max-width: 100%;
+					border: 1px solid #FAF7F2;
+					border-radius: 14px;
+				}
+				a{
+					position: absolute;
+					top: -12px;
+					left: 0;
+					z-index: 10;
+					img{
+						border:none;
+					}
+				}
+			}
+			p{
+				max-width: 70%;
+			}
 		}
 	}
 }
@@ -295,11 +326,12 @@ table {
 				.transform-life__box__training__text-box,
 				.transform-life__box__training__text-box--massage {
 					position: absolute;
-					max-width: 60%;
+					max-width: 70%;
 					z-index: 1000;
 					left: 0;
 					top: 0;
 					padding: 2rem;
+					
 					font-weight: 700;
 					h2 {
 						font-weight: 900;
@@ -328,7 +360,7 @@ table {
 						font-style: normal;
 						font-weight: 700;
 						line-height: 120%;
-						margin: 2rem 0;
+						margin: 1rem 0;
 						text-transform: uppercase;
 					}
 				}
