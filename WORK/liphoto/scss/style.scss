@@ -67,10 +67,11 @@ table {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 2rem;
+		padding: 4rem 2rem 2rem 2rem;
+		flex-direction: column;
 	}
 	&__topNav {
-		width: 50%;
+		width: 100%;
 		nav {
 			display: flex;
 			flex-direction: row;
@@ -95,7 +96,7 @@ table {
 	&__info {
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 100%;
 		h2 {
 			width: 100%;
 			text-align: center;
@@ -132,17 +133,21 @@ table {
 	.elements {
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: row;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		&__element {
 			position: relative;
-			width: 19%;
+			width: 90%;
 
 			margin-right: 1%;
 			margin-bottom: 10px;
 			transition: 0.3s;
 			text-decoration: none;
+			overflow: hidden;
 			&__image {
 				width: 100%;
+				transition: transform 0.5s;
 			}
 			p {
 				display: none;
@@ -163,7 +168,7 @@ table {
 				text-align: center;
 				letter-spacing: 0.06em;
 				color: white;
-				cursor: default;
+				cursor: pointer;
 			}
 			&:hover p {
 				display: block;
@@ -171,6 +176,7 @@ table {
 			}
 			&:hover img {
 				opacity: 0.82;
+				transform: scale(1.1);
 			}
 		}
 	}
@@ -185,12 +191,14 @@ table {
 	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
+
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 2rem;
 	}
 	&__bottomNav {
-		width: 50%;
+		width: 100%;
 		nav {
 			display: flex;
 			flex-direction: row;
@@ -212,7 +220,7 @@ table {
 	&__info {
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 100%;
 		h2 {
 			width: 100%;
 			text-align: center;
@@ -264,7 +272,6 @@ table {
 					height: 30px;
 				}
 			}
-		
 		}
 	}
 }
