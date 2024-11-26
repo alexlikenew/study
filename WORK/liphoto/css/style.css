@@ -76,6 +76,7 @@ table {
 }
 .header__topNav {
   width: 100%;
+  padding: 2rem 0;
 }
 .header__topNav nav {
   display: flex;
@@ -203,6 +204,10 @@ table {
 }
 .footer__bottomNav {
   width: 100%;
+  padding: 3rem 0;
+}
+.footer__bottomNav li:hover a {
+  animation: colorRotate 3s linear 0s infinite;
 }
 .footer__bottomNav nav {
   display: flex;
@@ -248,8 +253,7 @@ table {
   width: 100%;
 }
 .footer__rights {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -271,6 +275,9 @@ table {
 .footer__rights p a {
   margin-left: 10px;
 }
+.footer__rights p a:hover {
+  animation: colorRotate 3s linear 0s infinite;
+}
 .footer__rights p a img {
   width: 30px;
   height: 30px;
@@ -291,5 +298,27 @@ table {
   }
   100% {
     color: #6666ff;
+  }
+}
+@media (min-width: 576px) {
+  .main .wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main .elements__element {
+    width: 45%;
+  }
+}
+@media (min-width: 992px) {
+  .main .wrapper {
+    justify-content: space-evenly;
+  }
+  .main .elements__element {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .main .elements__element {
+    width: 32%;
   }
 }/*# sourceMappingURL=style.css.map */

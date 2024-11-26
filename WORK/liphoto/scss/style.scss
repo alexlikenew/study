@@ -72,6 +72,7 @@ table {
 	}
 	&__topNav {
 		width: 100%;
+		padding: 2rem 0;
 		nav {
 			display: flex;
 			flex-direction: row;
@@ -199,6 +200,10 @@ table {
 	}
 	&__bottomNav {
 		width: 100%;
+		padding: 3rem 0;
+		li:hover a {
+			animation: colorRotate 3s linear 0s infinite;
+		}
 		nav {
 			display: flex;
 			flex-direction: row;
@@ -241,12 +246,13 @@ table {
 			color: #030303;
 			margin-top: 0.2em;
 			width: 100%;
+			
 		}
 	}
 
 	&__rights {
-		margin-top: 3rem;
-		padding-top: 2rem;
+		
+		padding-top: 4rem;
 		display: flex;
 		justify-content: center;
 		align-content: center;
@@ -267,6 +273,9 @@ table {
 		p {
 			a {
 				margin-left: 10px;
+				&:hover {
+					animation: colorRotate 3s linear 0s infinite;
+				}
 				img {
 					width: 30px;
 					height: 30px;
@@ -291,5 +300,42 @@ table {
 	}
 	100% {
 		color: #6666ff;
+	}
+}
+//MEDIA QUERIES 578px - 768px
+@media (min-width: 576px) {
+	.main{
+		.wrapper{
+			flex-direction:row ;
+			justify-content: space-evenly;
+		}
+		.elements__element{
+			width: 45%;
+		}
+	}
+}
+//MEDIA QUERIES 768px - 992px
+@media (min-width: 768px) {
+
+}
+//MEDIA QUERIES 992px - 1200px
+@media (min-width: 992px) {
+	.main{
+		.wrapper{
+			
+			justify-content: space-evenly;
+		}
+		.elements__element{
+			width: 30%;
+		}
+	}
+}
+//MEDIA QUERIES 1200 px +
+@media (min-width: 1200px) {
+	.main{
+		
+		.elements__element{
+			width: 32%;
+		}
 	}
 }
